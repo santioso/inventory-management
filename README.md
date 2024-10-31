@@ -15,7 +15,7 @@ This is an inventory management application that allows you to create, search, l
 ### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/inventory-management.git
+git clone https://github.com/santioso/inventory-management-front.git
 cd inventory-management
 ``` 
 
