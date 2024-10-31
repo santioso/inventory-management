@@ -17,8 +17,9 @@ This is an inventory management application that allows you to create, search, l
 ```bash
 git clone https://github.com/your-username/inventory-management.git
 cd inventory-management
+``` 
 
-## Backend Setup
+### Backend Setup
 Navigate to the backend directory:
 
 cd backend
@@ -33,6 +34,7 @@ npm run start
 The backend server should be running at http://localhost:3000.
 
 Frontend Setup
+
 ## Frontend Setup
 Navigate to the frontend directory:
 
@@ -44,7 +46,6 @@ ng serve
 
 The frontend server should be running at http://localhost:4200.
 
-Usage
 ## Usage
 
 ### Create Product
