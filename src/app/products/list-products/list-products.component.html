@@ -1,0 +1,35 @@
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Cantidad</th>
+      <th>Vencimiento</th>
+      <th>Estado</th>
+      <th>Entrada o salida del producto</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{ product.name }}</td>
+      <td>{{ product.quantity }}</td>
+      <td>{{ product.expirationDate }}</td>
+      <td>{{ product.status }}</td>
+      <td>
+        <input [(ngModel)]="product.newQuantity" type="number" placeholder="Actualizar cantidad">
+      </td>
+      <td>
+        <button
+          (click)="inProductQuantity(product.id, product.newQuantity)"
+          [disabled]="!product.newQuantity || product.newQuantity <= 0">
+          Entrada
+        </button>
+        <button
+          (click)="outProductQuantity(product.id, product.newQuantity)"
+          [disabled]="!product.newQuantity || product.newQuantity <= 0 || product.newQuantity > product.quantity">
+          Salida
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

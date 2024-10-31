@@ -1,0 +1,9 @@
+<h2>Buscar Productos</h2>
+<app-search-product (productsFound)="updateProductList($event)"></app-search-product>
+<button (click)="getProducts()">Borrar filtro</button>
+
+<h2>Crear Producto</h2>
+<app-create-product (productCreated)="getProducts()"></app-create-product>
+
+<h2>Lista de Productos</h2>
+<app-list-products [products]="products" (productUpdated)="getProducts()"></app-list-products>

@@ -1,6 +1,7 @@
 # InventoryFrontend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.7.
+This is an inventory management application that allows you to create, search, list and update products. The app is built with Angular on the frontend and NestJS on the backend.
 
 ## Development server
 
